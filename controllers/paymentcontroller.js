@@ -1,4 +1,5 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const db = require("../models/index");
 
 const createpayment = async (req,res) =>{
     try{
